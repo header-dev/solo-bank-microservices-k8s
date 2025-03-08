@@ -55,7 +55,7 @@ jib {
 		image = 'openjdk:21-jdk-slim'
 	}
 	to {
-		image = "docker.io/headerdev/${project.group}-${project.name}:${project.version}"
+		image = "docker.io/headerdev/${project.name}:${project.version}"
 		auth {
 			username = "headerdev"
 			password = "Wit@2001"
