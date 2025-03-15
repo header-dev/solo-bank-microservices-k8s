@@ -2,7 +2,7 @@
 FROM openjdk:21-jdk-slim
 
 # Add Maintainer Info
-LABEL maintainer="idevalot
+LABEL maintainer="kritawit.bu@gmail.com"
 
 #add application jar to the container
 COPY build/libs/accounts-0.0.1-SNAPSHOT.jar accounts-0.0.1-SNAPSHOT.jar

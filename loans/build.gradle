@@ -56,6 +56,12 @@ docker {
 		baseImage = 'openjdk:21-jdk-slim'
 		maintainer = 'kritawit.bu@gmail.com'
 		ports = [8082]
-		images = ["${project.group}/${project.name}:${project.version}"]
+		images = ["docker.io/headerdev/${project.name}:${project.version}"]
+		registryCredentials {
+			url = 'https://index.docker.io/v1/'
+			username = 'headerdev'
+			password = 'Wit@2001'
+		}
+
 	}
 }

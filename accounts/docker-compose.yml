@@ -1,0 +1,37 @@
+services:
+  accounts:
+    image: "headerdev/accounts:0.0.1-SNAPSHOT"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - solobank
+  loans:
+    image: "headerdev/loans:0.0.1-SNAPSHOT"
+    container_name: loans-ms
+    ports:
+      - "8082:8082"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - solobank
+  cards:
+    image: "headerdev/cards:0.0.1-SNAPSHOT"
+    container_name: cards-ms
+    ports:
+      - "8081:8081"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - solobank
+networks:
+  solobank:
+      driver: "bridge"

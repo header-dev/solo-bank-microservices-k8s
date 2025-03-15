@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.idevalot'
 version = '0.0.1-SNAPSHOT'
-
+sss
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
